@@ -7,33 +7,59 @@
     <link href="../SocialTree/assets/css/style.css" rel="stylesheet">
     <title>Social Tree</title>
 
-
 </head>
 <body>
-
+    <div class="head"></div>
     <div class="avatar">
         <img class="avatar-img" src="../SocialTree/assets/avatar.jpg" alt="" width="168px" height="168px">
         <div class="title-instagram">
             <h1>@eliaslma</h1>
+            <h6 class="text-title">Em construção...</h6>
         </div>
-    
+
          <div class="button">
-            <button onclick="window.location.href='https://www.github.com/eliaslma';">confira meu portfólio</button>
+            <button class="button-link">confira meu portfólio</button>
         </div>
 
         <div class="button">
-            <button >solicite um orçamento</button>
+            <button class="button-link">solicite um orçamento</button>
         </div>
 
         <div class="button">
-            <button>tire suas dúvidas</button>
+            <button class="button-link">tire suas dúvidas</button>
         </div>
 
         <div class="button">
-            <button>avaliacões de clientes</button>
+            <button class="button-link">avaliacões de clientes</button>
         </div>
 
+        <button type="button-social" class="button-social" onclick="window.location.href='https://www.github.com/eliaslma';">
+            <span class="button__icon">
+                <ion-icon name="logo-github"></ion-icon>
+            </span>
+          </button>
+          <button type="button-social" class="button-social">
+            
+            <span class="button__icon">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </span>
+          </button>
+          <button type="button-social" class="button-social">
+            
+            <span class="button__icon">
+                <ion-icon name="logo-facebook"></ion-icon>
+                
+            </span>
+          </button>
+          <button type="button-social" class="button-social">
+            <span class="button__icon">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </span>
+          </button>
     </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        
 </body>
 
 </html>
