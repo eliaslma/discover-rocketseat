@@ -28,7 +28,8 @@
 }
 
 body{
-    background-color: #FAFAFA;
+    /*background-color: #FAFAFA;*/
+    background-image: url(../background-papel.jpg);
   }
   
 .button-link{
