@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
-
 .avatar{
     text-align: center;
     margin-top: 50px;
@@ -55,25 +53,8 @@ body{
     background-color: black;
 }
 
-.button-social{
-    display: inline;
+.social-icons{
     margin-top: 10px;
-    background-color: none;
-    border-radius: 12px;
-    height: 50px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    overflow: hidden;
-    z-index: hidden;
 }
-  
-.button__icon {
-    font-size: 3em;
-}
-
-
-
-
 
   
