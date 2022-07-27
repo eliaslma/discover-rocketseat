@@ -1,0 +1,154 @@
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+  }
+
+  body{
+    background-color: var(--body-bg-color);
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .page{
+    display: flex;
+    min-height: 100vh;
+  }
+
+  aside{
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+  }
+
+  main{
+    flex: 3;
+  }
+
+.avatar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-icons{
+    flex-direction: column;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.avatar-img{
+    border-radius: 50%;
+    border: solid 3px #00FF00;
+    width: 150px;
+    height: 150px;
+}
+
+section{
+    background-color: var(--bg-cards);
+    border-radius: 25px;
+    margin: 20px;
+    padding: 30px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--text-color);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.techs{
+  display: flex;
+  flex-direction: column;
+}
+
+.tech{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tech > p{
+  background-color: white;
+}
+
+.grid-container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 10px;
+ 
+}
+
+.grid-item{
+  font-size: 13px;
+  color: black;
+  background-color: var(--bg-techs);
+  border-radius: 15px;
+  margin: 5px;
+}
+
+.exp{
+  list-style: none;
+  padding: 0;
+}
+
+.li-exp{
+  margin-top: 10px;
+}
+
+.projs{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.repositories{
+  display: flex;
+}
+
+.rep{
+  flex: 1;
+}
+
+p{
+  font-size: 20px;
+}
+
+.rep-icos{
+  display: flex;
+  justify-content: space-between;
+}
+
+.branch-star{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.language-color{
+  background-color: #e7de79;
+  border: solid 3px var(--text-color);
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+
+.posts{
+  display: flex;
+}
+
+.text-post{
+  margin-left: 20px;
+}
+
+.appointments{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
