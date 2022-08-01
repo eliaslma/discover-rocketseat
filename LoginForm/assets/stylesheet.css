@@ -1,0 +1,134 @@
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+body{
+    display: flex;
+    margin: 0 auto;
+    box-sizing: border-box;
+    height: 100vh;
+}
+.form{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+}
+.background{
+    flex: 1;
+    background-image: url(../assets/images/side-image-2x.jpg);
+    background-position: center;
+    background-clip: border-box;
+    background-size: cover;
+}
+.logo{
+    margin: 20px;
+}
+#formulario{
+    margin: 10%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--form-background);
+    height: auto;
+    align-items: center;
+}
+.form-title{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    gap: .5rem;
+    color: var(--text-title);
+}
+.form-title > h1{
+    margin: 0;
+}
+.form-style > p{
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-base);
+    font-weight: 500;
+    margin-top: 0;
+}
+.form-style > legend{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: var(--text-base);
+    margin-top: 16px;
+}
+#email, #password{
+    border: none;
+    background-color: var(--form-background);
+    color: var(--text-base);
+    width: 100%;
+    outline: none;
+}
+.form-group{
+    display: flex;
+    width: auto;
+    color: var(--text-base);
+    background-color: var(--form-background);
+    border: 1px solid var(--text-base);
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    gap: .5rem;
+    align-items: center;
+    margin-top: 5px;
+}
+.form-group:focus-within{
+    border-color: var(--primary-color);
+}
+.rem-forgot{
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-base);
+    font-family: 'Roboto', sans-serif;
+}
+.rem-forgot > a{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+.rem-forgot > a:hover{
+    text-decoration: underline;
+}
+#remember{
+    cursor: pointer;
+}
+.rem{
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+button{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 16px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--form-background);
+    width: 100%;
+    cursor: pointer;
+}
+.subscribe{
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .2rem;
+}
+strong > a{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-style: bold;
+}
+strong > a:hover{
+    text-decoration: underline;
+}
