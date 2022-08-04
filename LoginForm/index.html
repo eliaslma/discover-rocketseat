@@ -25,14 +25,14 @@
                     <p>Entre com suas informações de cadastro.</p>
                     <legend>E-mail</legend>
                     <div class="form-group">
-                        <img src="./assets/images/mail.svg" alt="" srcset="">
-                        <input type="email" id="email" aria-label="email" placeholder="Digite seu e-mail">
+                        <img src="./assets/images/mail-focus.svg" id="mail" alt="" srcset="">
+                        <input type="email" id="email" aria-label="email" placeholder="Digite seu e-mail" autofocus onfocus="focusMail()" onblur="noFocus()">
                     </div>
                     <legend>Senha</legend>
                     <div class="form-group">
-                        <img src="./assets/images/lock.svg" alt="" srcset="">
-                        <input type="password" id="password" aria-label="password" placeholder="Digite sua senha">
-                        <img src="./assets/images/eye.svg" alt="" srcset="">
+                        <img src="./assets/images/lock.svg" id="lock" alt="" srcset="">
+                        <input type="password" id="password" aria-label="password" placeholder="Digite sua senha" onfocus="focusLock()"  onblur="noFocus()">
+                        <img src="./assets/images/eye.svg" id="eye" onclick="showPass()" alt="" srcset="">
                     </div>
                     <div class="rem-forgot">
                         <div class="rem">
@@ -52,5 +52,6 @@
             </form>
         </div>
         <div class="background"></div>
+        <script src="./assets/scripts.js"></script>
     </body>
 </html>
