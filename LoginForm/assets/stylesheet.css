@@ -132,3 +132,8 @@ strong > a{
 strong > a:hover{
     text-decoration: underline;
 }
+@media (max-width: 800px){
+  .background{
+    display: none;
+  }
+}
