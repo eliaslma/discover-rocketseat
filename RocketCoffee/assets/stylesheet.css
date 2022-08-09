@@ -1,0 +1,115 @@
+:root {
+    --background: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+  }
+
+
+body{
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background);
+    background-image: url('./blur-2.png'), url('./blur-1.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, bottom left;
+    background-size: contain;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container{
+    padding: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a{  
+    
+    text-decoration: none;
+    color: white;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+button{
+    background-color: transparent;
+    border: var(--button) 2px solid;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 10px 30px;
+}
+
+.logo-mobile{
+    display: none;
+}
+
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#menu-button{
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .button{
+        display: none;
+    }
+
+    .nav, .links{
+     display: block;   
+    }
+
+    .links{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .logo-mobile{
+        display: initial;
+    }
+
+    .logo-rocket{
+        display: none;
+    }
+
+    #menu-button{
+        display: initial;
+    }
+
+    
+    
+}
+
+
+
+
+
+
