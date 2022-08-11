@@ -3,13 +3,10 @@
     --text-color: #FFF;
     --button: #8257E5;
     --border: #29292E;
-    --border-menu-mobile: #A8A8B3;
+    --border-menu-mobile: #29292E;
     --text-color-menu-mobile: #E1E1E6;
-  }
-
-
+}
 body{
-    height: 100vh;
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
@@ -20,7 +17,6 @@ body{
     background-size: contain;
     font-family: 'Manrope', sans-serif;
 }
-
 .container{
     padding: 30px;
     color: white;
@@ -28,28 +24,25 @@ body{
     flex-direction: column;
     max-width: 960px;
     margin: 0 auto;
-
+    height: 100vh;
+    padding-bottom: 0;
+    justify-content: space-between;
 }
-
 .nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-a{  
-    
+a{
     text-decoration: none;
     color: white;
 }
-
-.links{
+#links{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
 }
-
 button{
     background-color: transparent;
     border: var(--button) 2px solid;
@@ -59,57 +52,129 @@ button{
     font-weight: 700;
     padding: 10px 30px;
 }
-
 .logo-mobile{
     display: none;
 }
-
-
 .nav-bar{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-
 #menu-button{
     display: none;
 }
-
+#title{
+    display: flex;
+    font-size: 3rem;
+    flex-direction: column;
+    align-items: center;
+}
+#title .great{
+    color: var(--background);
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+    margin: 0;
+}
+#title > h1{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.text{
+    display: none;
+}
+.text > h2{
+    margin: 0;
+}
+.button-center{
+    display: none;
+}
 @media (max-width: 800px) {
     .button{
         display: none;
-    }
-
-    .nav, .links{
-     display: block;   
-    }
-
-    .links{
-        display: none;
-        flex-direction: column;
-        align-items: flex-start;
-
-    }
-
+   }
+    .nav{
+        display: block;
+   }
     .logo-mobile{
         display: initial;
-    }
-
+   }
     .logo-rocket{
         display: none;
-    }
-
+   }
     #menu-button{
         display: initial;
-    }
-
-    
-    
+   }
+    #links{
+        display: none;
+   }
+    #links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0rem;
+   }
+    #links.active > a{
+        width: 100%;
+        padding: 10px 20px;
+        color: var(--text-color-menu-mobile);
+        border-bottom: var(--border-menu-mobile) solid 0.01rem;
+   }
+    #links.active > a:hover{
+        border-left: 3px solid var(--button);
+        color: var(--text-color);
+        font-weight: 700;
+   }
+    .container{
+        padding: 0;
+        height: 100vh;
+   }
+    .nav-bar{
+        border-bottom: var(--border-menu-mobile) solid 0.01rem;
+        padding: 20px;
+   }
+    body{
+        background-image: none;
+   }
+    #title{
+        display: flex;
+        font-size: 2rem;
+        flex-direction: column;
+        align-items: center;
+   }
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.5rem;
+        padding: 20px;
+   }
+    .button-center{
+        display: flex;
+        justify-content: center;
+   }
+    body{
+        background-image: url('./blur-mobile.png');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+   }
+    .text.deactive{
+        display: none;
+   }
+    .button-center.deactive{
+        display: none;
+   }
+    #title.deactive{
+        display: none;
+   }
+    .greatcoffee.deactive{
+        display: none;
+   }
 }
-
-
-
-
-
-
+@media (max-width: 550px){
+    #title{
+        font-size: 1.5rem;
+   }
+    .text{
+        font-size: 1.2rem;
+   }
+}
