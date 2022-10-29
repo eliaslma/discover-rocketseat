@@ -1,4 +1,4 @@
-var dateLaunch = new Date('September 11, 2022 23:59:00')
+var dateLaunch = new Date('December 31, 2022 23:59:00')
 var day = document.getElementById("day")
 var hour = document.getElementById("hour")
 var minute = document.getElementById("minute")
@@ -32,4 +32,4 @@ function countdown(){
 
 }
 
-var myInterval = setInterval(countdown,1000) //chama a função a cada 1000ms
+setInterval(countdown,1000) //chama a função a cada 1000ms
