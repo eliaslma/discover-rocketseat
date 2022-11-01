@@ -44,7 +44,10 @@ body {
 
 .card .img-card{
     width: 100%;
-    cursor: pointer;
+}
+
+.card:hover{
+    background-color: #29292E;
 }
 
 .card-content{
@@ -79,7 +82,7 @@ a{
     background-color: #323238;
     color: white;
     text-decoration: none;
-    padding: 3px 12px;
+    padding: 3px 9px;
     border-radius: 16px;  
 }
 
