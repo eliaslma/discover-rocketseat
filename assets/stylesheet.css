@@ -48,7 +48,7 @@ body {
 }
 
 .card-content{
-    margin: 20px;
+    padding: 20px;
 }
 
 .card-links{
@@ -63,8 +63,16 @@ h3{
 }
 
 p{
+    
     margin-top: 10px;
     color: #8D8D99;
+      /* Both of the following are required for text-overflow */
+    text-overflow: inherit;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    
 }
 
 a{
