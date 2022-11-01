@@ -1,6 +1,7 @@
 *{
     margin: 0 auto;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root{
@@ -10,12 +11,14 @@
 body {
     background-color: var(--background);
     font-family: 'Roboto', sans-serif;
+    color: white;
 
 }
 
 .container{
-    max-width: 960px;
+    max-width: 1180px;
     flex-direction: column;
+    padding: 30px;
 }
 
 .navbar{
@@ -23,7 +26,57 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 30px;
-    
+}
+
+.container-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    width: 100%;
+    gap: 2rem;
+    margin-top: 50px;
+}
+
+.container-cards > .card{
+    border-radius: 5px;
+    overflow: hidden; 
+    background-color: #202024;
+}
+
+.card .img-card{
+    width: 100%;
+    cursor: pointer;
+}
+
+.card-content{
+    margin: 20px;
+}
+
+.card-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+h3{
+    color: #E1E1E6
+}
+
+p{
+    margin-top: 10px;
+    color: #8D8D99;
+}
+
+a{
+    background-color: #323238;
+    color: white;
+    text-decoration: none;
+    padding: 3px 12px;
+    border-radius: 16px;  
+}
+
+a:hover{
+    background-color: #505158;
 }
 
 #logo-discover{
@@ -42,3 +95,4 @@ span{
     border-left: 0.01rem #C4C4CC solid;
     padding-left: 32px;
 }
+
