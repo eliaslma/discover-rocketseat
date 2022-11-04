@@ -1,89 +1,89 @@
+*{
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+
+:root {
+  --body-bg-color: #121214;
+  --text-color: #E1E1E6;
+  --title-color: #04D361;
+  --form-color: #A8A8A8;
+  --bg-button-color: #8257e5;
+}
+
 body{
+    display: flex;
     box-sizing: border-box;
-    margin: 0;
-    height: 100vh;
-    display: grid;
-    grid-template-areas:
-        "main aside";
-    grid-template-rows: 1fr;
-    grid-template-columns: 50% 50%;
+    margin: 0 auto;
+    background-color: var(--body-bg-color);
 }
 
 aside{
-    grid-area: aside;
+    flex: 1;
     background-size: cover;
     background-position: center;
     background-clip: border-box;
     background-image: url(./read_news.jpg);
+    box-sizing: border-box;
 }
 
 .logo{
-    display: flex;
-    justify-content: left;
-    width: 100%;
-    height: 15%;
-    margin-bottom: 12%;
+    margin: 20px;
 }
 
 img{
-   width: 60%;
+  width: 50%
 }
 
+
 main{
-    grid-area: main;
-    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 15px;
+    height: 100vh;
     background-color: var(--body-bg-color);
 
 }
 
-:root {
-    --body-bg-color: #121214;
-    --text-color: #E1E1E6;
-    --title-color: #04D361;
-    --form-color: #A8A8A8;
-    --bg-button-color: #8257e5;
-  }
-
   h1{
-    font-family: 'Work Sans', sans-serif;
     color: var(--title-color);
-    margin: 5;
+    margin: 50 5 5;
   }
 
   h4{
     margin: 5;
-    font-family: 'Work Sans', sans-serif;
     color: white;
 
   }
 
   p{
     margin: 5;
-    font-family: 'Work Sans', sans-serif;
     color: var(--text-color);
   }
 
 .sendmail{
     font-family: 'League Spartan', sans-serif;
     color: var(--text-color);
-    height: 6%;
-    width: 220%;
+    width: 120%;
     margin-top: 30px;
+    margin-left: 5px;
+    padding-right: 30px;
   }
 
 .inputmail{
-    height: 100%;
     display: flex;
-    width: 55%;
     margin-top: 10px;
 }
 
 input{
+    width: 100%;
     border: none;
     outline: none;
-    width: 100%;
     border-left: #04D361 10px solid;
     z-index: 1;
+    height: 50px;
 
 }
 
@@ -93,7 +93,7 @@ input{
     cursor: pointer;
     background-color: var(--bg-button-color);
     border: none;
-    width: 5%;
+    width: 50px;
     z-index: 1;
 
 }
@@ -132,4 +132,13 @@ a:hover{
 
 .seta{
   width: 10%;
+}
+
+@media(max-width: 750px){
+
+  aside{
+    display: none;
+  }
+
+
 }
