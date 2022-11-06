@@ -1,17 +1,11 @@
-* {
-    margin: 0 auto;
-    box-sizing: border-box;
-    
-}
-
 :root {
     --bg: #000000;
-    --bg-card: #0E1218;
+    --bg-card: rgb(14, 18, 24);
     --text: #F1F1F1;
     --img-profile: #8257e5;
     --buttons: #FFF;
     --border-button: #1A1A1A;
-  }
+}
 
 body{
     background-color: var(--bg-card);
@@ -19,28 +13,34 @@ body{
 }
 
 .container{
+    margin: 0 auto;
     color: var(--text);
-    max-width: 1180px;
-    border: 3px solid black;
+    max-width: 960px;
+    
 }
 
 .card-container{
     display: flex;
-    border: 2px solid blue;
-    padding: 50px;
+    padding: 10px;
 }
 
 .bg-card{
     display: flex;
     flex-direction: column;
     flex: 1;
-    border: 1px solid red;
+    align-items: center;
     padding: 20px;
+    
+}
+
+.bg-card > p{
+    font-size: 24px;
+    margin-top: 0px;
 }
 
 .button{
     flex: 1;
-    border: 1px solid yellow;
+    
 
 }
 
@@ -48,15 +48,73 @@ body{
 
     border: 0.01rem solid white;
     border-radius: 30px;
+    padding: 10px;
     width: 100%;
-    padding: 15px;
+    background-color: white;
 
 }
 
 .content-card{
     border: 0.01rem solid white;
     border-radius: 50px;
+    padding: 20px;
+    background-color: var(--bg-card);
+    overflow: hidden;
 
+}
+
+.github-profile{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.github-profile > p{
+    font-size: 24px;
+}
+
+.avatar-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.avatar-container img{
+    border-radius: 50%;
+    border: 8px solid var(--img-profile);
+    width: 95%;
+    right: -90px;
+    position: relative;
+}
+
+.infos-container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(14, 18, 24,0.7);
+    justify-content: center;
+    width: fit-content;
+    padding: 15px;
+    position: relative;
+    top: -125px;
+    border-radius: 30px;
+    gap: 0.8rem;
+    
+   
+}
+
+.info-content{
+    display: flex;
+    gap: 0.8rem;
+   
+}
+
+.info-content > p {
+    margin: 0;
+}
+
+.logo-company{
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.3rem;
 }
 
 @media(max-width: 620px){
