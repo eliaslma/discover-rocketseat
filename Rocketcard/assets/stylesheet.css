@@ -16,7 +16,6 @@ body{
     margin: 0 auto;
     color: var(--text);
     max-width: 960px;
-    
 }
 
 .card-container{
@@ -30,7 +29,6 @@ body{
     flex: 1;
     align-items: center;
     padding: 20px;
-    
 }
 
 .bg-card > p{
@@ -40,27 +38,21 @@ body{
 
 .button{
     flex: 1;
-    
-
 }
 
 .border-card{
-
     border: 0.01rem solid white;
     border-radius: 30px;
     padding: 10px;
     width: 100%;
     background-color: white;
-
 }
 
 .content-card{
-    border: 0.01rem solid white;
     border-radius: 50px;
     padding: 20px;
     background-color: var(--bg-card);
     overflow: hidden;
-
 }
 
 .github-profile{
@@ -97,14 +89,15 @@ body{
     top: -125px;
     border-radius: 30px;
     gap: 0.8rem;
-    
-   
 }
 
 .info-content{
     display: flex;
     gap: 0.8rem;
-   
+}
+
+.info-content.deactive{
+    display: none;
 }
 
 .info-content > p {
@@ -117,7 +110,37 @@ body{
     gap: 0.3rem;
 }
 
-@media(max-width: 620px){
+.button{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 24px;
+    gap: 0.8rem;
+}
+
+.button > p{
+    margin: 0;
+}
+
+.button > button{
+    font-size: 18px;
+    color: var(--buttons);
+    background-color: var(--bg);
+    border-radius: 12px;
+    padding: 12px 24px 12px 24px;
+}
+
+.button > input {
+    border: none;
+    outline: none;
+    width: 50%;
+    height: 36px;
+    font-size: 16px;
+}
+
+
+@media(max-width: 800px){
     .card-container{
         flex-direction: column;
     }
