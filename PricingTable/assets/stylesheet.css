@@ -4,38 +4,57 @@
     --gray: #828799;
     --page-background: #f9fbfc;
 }
+
 body{
     margin: 0 auto;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
 .background-title{
     display: flex;
     height: 50vh;
     background-color: var(--blue);
     flex-direction: column;
-    justify-content: center;
+    padding-top: 50px;
     align-items: center;
     color: white;
 }
+
+.container-tables{
+    display: grid;
+}
+
 .tables{
     display: flex;
+    flex-direction: row;
+    width: 100%; 
+    gap: 1rem;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
 }
 .table{
-    width: 20%;
-    height: 55vh;
+    width: 355px;
+    height: 470px;
     background-color: white;
     border-radius: 6px;
-    top: -100px;
+    top: -250px;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    justify-content: space-between;
 }
+
+.table-featured{
+    height: 490px;
+}
+
+.info-table{
+    display: block;
+}
+
 .table-title{
     font-weight: 600;
     background-color: #ffcc29;
@@ -44,19 +63,24 @@ body{
     align-items: center;
     border-radius: 6px 6px 0px 0px;
 }
+
 p{
     margin: 0;
 }
+
 .tables > .table:nth-child(2){
     padding: 0;
 }
+
 .title > h1{
     font-size: 2em;
 }
+
 .table-title > .basic{
     color: #1d539e;
     padding: 15px;
 }
+
 .table-title > .popular{
     color: white;
     border-radius: 15px;
@@ -65,29 +89,36 @@ p{
     margin-right: 15px;
     font-size: 12px;
 }
+
 .table-price{
     display: flex;
     align-items: center;
 }
+
 p{
     color: var(--gray);
 }
+
 .subtitle{
     color: white;
 }
+
 .lorem-text{
     font-size: 12px;
     margin-bottom: 15px;
 }
-.table-price > h1, .table > .lorem-text{
+
+.table-price > h1, .info-table > .lorem-text{
     margin-left: 15px;
 }
-.table > .title{
+
+.info-table > .title{
     color: black;
     margin-left: 15px;
     margin-top: 15px;
     font-weight: 600;
 }
+
 .check-lorem{
     display: flex;
     gap: .5rem;
@@ -95,10 +126,12 @@ p{
     margin-top: 10px;
     margin-left: 15px;
 }
+
 .check-text{
     font-size: 11px;
     font-weight: 600;
 }
+
 .assinar{
     cursor: pointer;
     color: #1d539e;
@@ -109,6 +142,7 @@ p{
     font-weight: normal;
     margin: 15px;
 }
+
 .assinar-blue{
     cursor: pointer;
     background-color: #1d539e;
