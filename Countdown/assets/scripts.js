@@ -1,4 +1,4 @@
-var dateLaunch = new Date('December 31, 2022 23:59:00')
+var dateLaunch = new Date('December 31, 2023 23:59:00')
 var day = document.getElementById("day")
 var hour = document.getElementById("hour")
 var minute = document.getElementById("minute")
