@@ -9,4 +9,5 @@ Live: https://eliaslma.github.io/discover-rocketseat/
 
 - HTML
 - CSS
+- JavaScript
 - Git e Github
